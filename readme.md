@@ -54,3 +54,19 @@ Iniciar arquivo git:
 ```
 git init
 ```
+Adicionar a porta do servidor no env.
+```
+PORT = 3004
+```
+Configuração básica da api com express:
+```
+app.listen(PORT, () => console.log('Servidor rodando na porta ${PORT}'));
+```
+Criar comando para rodar o servidor no arquivo package,json:
+```
+"start":"nodemon src/server.js"
+```
+Rodar o servidor:
+```
+npm start
+```
